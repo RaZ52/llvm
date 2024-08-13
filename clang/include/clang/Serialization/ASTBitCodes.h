@@ -1126,6 +1126,9 @@ enum PredefinedTypeIDs {
 // \brief AMDGPU types with auto numeration
 #define AMDGPU_TYPE(Name, Id, SingletonId) PREDEF_TYPE_##Id##_ID,
 #include "clang/Basic/AMDGPUTypes.def"
+// \brief HLSL intangible types with auto numeration
+#define HLSL_INTANGIBLE_TYPE(Name, Id, SingletonId) PREDEF_TYPE_##Id##_ID,
+#include "clang/Basic/HLSLIntangibleTypes.def"
 
   /// The placeholder type for unresolved templates.
   PREDEF_TYPE_UNRESOLVED_TEMPLATE,
@@ -1138,7 +1141,11 @@ enum PredefinedTypeIDs {
 ///
 /// Type IDs for non-predefined types will start at
 /// NUM_PREDEF_TYPE_IDs.
+<<<<<<< HEAD
 const unsigned NUM_PREDEF_TYPE_IDS = 516;
+=======
+const unsigned NUM_PREDEF_TYPE_IDS = 505;
+>>>>>>> 52956b0f705499ae4a268d3629b402ecdc2cbbab
 
 // Ensure we do not overrun the predefined types we reserved
 // in the enum PredefinedTypeIDs above.

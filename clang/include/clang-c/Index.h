@@ -2980,6 +2980,7 @@ enum CXTypeKind {
   CXType_Atomic = 177,
   CXType_BTFTagAttributed = 178,
 
+<<<<<<< HEAD
   /* SPIRV builtin types. */
   CXType_SampledOCLImage1dRO = 200,
   CXType_SampledOCLImage1dArrayRO = 201,
@@ -2993,6 +2994,10 @@ enum CXTypeKind {
   CXType_SampledOCLImage2dMSAADepthRO = 209,
   CXType_SampledOCLImage2dArrayMSAADepthRO = 210,
   CXType_SampledOCLImage3dRO = 211
+=======
+  // HLSL Intangible Types
+  CXType_HLSLResource = 179,
+>>>>>>> 52956b0f705499ae4a268d3629b402ecdc2cbbab
 };
 
 /**

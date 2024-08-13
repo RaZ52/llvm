@@ -23,7 +23,11 @@ export module b;
 import a;
 export int b();
 
+<<<<<<< HEAD
 // CHECK: <DECL_FUNCTION {{.*}} op8=[[#]]
+=======
+// CHECK: <DECL_FUNCTION {{.*}} op8=4056
+>>>>>>> 52956b0f705499ae4a268d3629b402ecdc2cbbab
 // CHECK: <TYPE_FUNCTION_PROTO
 
 //--- a.v1.cppm
